@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/*
+<style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+*/
+
+/*Basic styles*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors: */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral: */
+    --main-background-blue: hsl(217, 54%, 11%);          /* Very dark Blue -- main backgorund */
+    --card-background-dblue: hsl(216, 50%, 16%);         /* Very dark Blue -- card Background */
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --body-font: 18px;                                     /*This can be changed for percentage - 93.75%*/
+
+    --main-font-family: 'Outfit', sans-serif;
+    --weight1: 300;
+    --weight2: 400;
+    --weight3: 600;                                       /* Bold */
+}
+
+body {
+    font-size: var(--body-font);
+    font-family: var(--main-font-family);
+    background-color: var(--main-background-blue);
+  }
+
+/* General paragraph styles */
+p {
+  font-style: var(--main-font-family);
+  color: var(--soft-blue);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.box-card {
+  width: 90%;
+  margin: auto;
+
+  background-color: var(--card-background-dblue);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+/*
+.main-image {
+  padding: 1.5rem;
+}
+*/
+
+.equilibrium-image {
+    border-radius: 1rem;
+}
+
+.equilibrium-image::after {
+  content: "";
+  color: cyan;
+  background-image: url("images/icon-view.svg");
+
+}
+
+/* Paragraph */
+.heading {
+  padding: 1rem 0;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.heading:hover {
+  color: var(--cyan);
+}
+
+.paragraph {
+  line-height: 2rem;
+  font-weight:  var(--weight1);
+}
+
+/* Information Price */
+.information-price {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.data  {
+ display: flex;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.data-info {
+  font-size: 600;
+  margin-left: .5rem
+}
+
+.data-info .cyan {
+  color: var(--cyan);
+}
+
+/* Line */
+.line {
+  width: 80%;
+  color: var(--soft-blue);
+}
+/* Person Information */
+.person-information {
+  display: flex;
+  margin-top: 2rem;
+  /*padding: 2rem 0; */
+}
+
+.image-box {
+  width: 20%;
+  display: inline-block;
+/*  float: left; */
+}
+
+.image-avatar {
+    border: solid white .15rem;
+    border-radius: 50%;
+}
+
+.author {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.cyan:hover {
+  color: var(--cyan);
+}
+
+.white {
+  color: var(--white);
+}
+
+.white:hover {
+  color: var(--cyan);
+}
